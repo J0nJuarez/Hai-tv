@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Sidebarhai from './components/Sidebar';
+import Videoprin from './components/videoprin';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+ 
+   <View style={styles.container}>
+      <Sidebarhai/>
+      <Videoprin/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex:1,
+    flexDirection: 'row',
+    backgroundColor: '#00040B',
   },
 });
