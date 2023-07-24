@@ -27,6 +27,15 @@ const Videoprin = () => {
         </View>
         <View>
           <Text style={styles.textocategoria} adjustsFontSizeToFit numberOfLines={1}>{Categoria}</Text>
+          <Pressable style={({pressed, focused}) => [
+            styles.botonprin,
+            pressed ? styles.pressedButton : {},
+            focused ? styles.focusedButton : {},
+          ]} onPress={() => console.log('pon la orden de que abra un video')}>
+                      {({ pressed }) => (
+                          <Text style={{...styles.botonTexto,  color: pressed ? '#1C83E6' : 'white'}}>▶</Text>
+                      )}
+          </Pressable>
           <Text style={styles.textoduracion} adjustsFontSizeToFit numberOfLines={1}>{duracion}</Text>
         </View>  
       </ImageBackground>
