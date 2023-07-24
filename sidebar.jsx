@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import IconHome from '../assets/SVGs/Icons/IconHome';
-import { vh,vw } from '../functions/whresponsive';
+import IconHome from './assets/SVGs/Icons/IconHome';
+import { vh,vw } from './functions/whresponsive';
 
 const Sidebarhai = () => {
   return (
@@ -19,6 +19,7 @@ const Sidebarhai = () => {
 
 const styles = StyleSheet.create({
   sidebar: {
+    zIndex:1,
     position: 'absolute',
     top:0,
     left: 0,
@@ -31,7 +32,6 @@ const styles = StyleSheet.create({
     borderRightColor: '#ABACAE',
     backgroundColor: 'rgba(0, 4, 11, 0.50)',
   },
-
   nav: {
     flex:1,
     flexDirection: 'column',

@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Sidebarhai from './components/Sidebar';
 import Videoprin from './components/videoprin';
+import Sidebarhai from './sidebar';
+
 
 export default function App() {
   return (
